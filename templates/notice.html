@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('         {{ url_for('static', filename = 'img/notice-bg1.jpg') }}              ')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Notices</h1>
+            <span class="subheading"><h6>Did you ever notice that people who are good with a computer don't use it for 
+                much of anything except being good with a computer? They know all about information technology
+              but they don't have much interest in the imformation. We are opposite.</h6></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+
+
+
+
+       <!-- Fetching from Database using for loop  -->
+       {% for note in notice %}
+       <div class="note-preview">
+          
+            <h2 class="note-title">
+                
+            </h2>
+            <h3 class="note-subtitle">
+
+            </h3>
+          
+          <p class="note-meta">Posted by
+            <a href="#">Admin</a>
+            on {{note.date}}</p>
+        </div>
+        {{note.note}}
+        <hr>
+        {% endfor %}
+
+
+        
+        <!-- Pager -->
+        <div class="clearfix">
+            <a class="btn btn-primary float-left" href="{{prev}}">&larr;Previous Posts</a>
+          <a class="btn btn-primary float-right" href="{{next}}">Next Posts &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

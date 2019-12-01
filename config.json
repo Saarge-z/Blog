@@ -1,0 +1,26 @@
+{
+    "params":
+    {
+        "local_server":"True",
+        "local_uri":"mysql://root:@localhost/adc",
+        "prod_uri":"mysql://root:@localhost/adc",
+
+        "fb_url":"https://facebook.com",
+        "tw_url":"https://twitter.com",
+        "gh_url":"https://github.com",
+
+        "copy_rt":"AMU ADC",
+        "blog_name":"Area of Dominant Coders (ADC)",
+        "blog_title":"AMU ADC Blog",
+        "tagline":"Aligarh Muslim University",
+        "gmail-user":"razamohib01@gmail.com",
+        "gmail-password":"",
+        "about_text":"Hi My name is Syed Mohib Raza. A BCA Final year Student in Aligarh Muslim University.",
+        "no_of_posts":3,
+        "login_img":"adc_logo.png",
+        "admin_user":"adcsaarge",
+        "admin_password":"adcbegin@2k19",
+        "upload_location":"C:\\Users\\Syed\\Documents\\Python\\Flask_tut\\static\\img"
+    }
+
+}
